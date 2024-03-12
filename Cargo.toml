@@ -6,7 +6,7 @@ authors = ["Kauê Fraga Rodrigues"]
 description = "🧮 Need a powerful and simple library to work with arithmetic progressions in Rust? You should definitively try ariprog out!"
 license = "MIT"
 readme = "crates-readme.md"
-keywords = ["arithmetic-progression", "math", "ap"]
+keywords = ["math", "ap"]
 repository = "https://github.com/kauefraga/ariprog"
 
 [dependencies]
