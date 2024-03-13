@@ -72,7 +72,7 @@ Feel free to fork it, make a change and open a pull request. Same for issues, su
 3. Make your changes, commit and push these
 4. Open a pull request (write a descriptive message about what you changed)
 
-### How to run and where to create tests
+## How to run and where to create tests
 
 To test ariprog, with the project in your machine, run `cargo test`.
 
