@@ -8,7 +8,7 @@ use ariprog::{
 #[test]
 fn it_gets_common_difference() {
   assert_eq!(get_common_difference(15.0, 10.0), 5.0);
-  assert_eq!(get_common_difference(10.0, 8.0), 3.0);
+  assert_eq!(get_common_difference(10.0, 8.0), 2.0);
 }
 
 #[test]

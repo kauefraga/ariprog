@@ -57,9 +57,23 @@ pub fn get_first_term(nth_term: f32, common_difference: f32, nth_term_position: 
     first_term
 }
 
-pub fn insert_arithmetic_means(how_many_in_between: i32, first_term: f32, last_term: f32) -> Vec<f32> {
+/// Returns an arithmetic progression with the first term + arithmetic means + nth_term, as a vector
+///
+/// # Arguments
+///
+/// * `how_many_in_between` - How many terms go between the first term and the nth term
+/// * `first_term` - The first term of the AP
+/// * `nth_term` - The nth term of the AP
+///
+/// # Examples
+///
+/// ```
+/// use ariprog;
+/// let ap = ariprog::insert_arithmetic_means(3, 1.0, 13.0); // Should return [1.0, 4.0, 7.0, 10.0, 13.0]
+/// ```
+pub fn insert_arithmetic_means(how_many_in_between: i32, first_term: f32, nth_term: f32) -> Vec<f32> {
     let how_many_terms = how_many_in_between as f32 + 2.0;
-    let first_calc = last_term - first_term;
+    let first_calc = nth_term - first_term;
 
     let common_difference = first_calc / (how_many_terms - 1.0);
 
