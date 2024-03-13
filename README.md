@@ -1,7 +1,5 @@
 # Ariprog
 
-> 🧮 Need a powerful and simple library to work with arithmetic progressions in Rust? You should definitively try ariprog out!
-
 ![GitHub top language](https://img.shields.io/github/languages/top/kauefraga/ariprog)
 ![ariprog](https://img.shields.io/badge/ariprog-b7410e)
 ![GitHub's license](https://img.shields.io/github/license/kauefraga/ariprog)
