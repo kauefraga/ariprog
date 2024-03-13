@@ -18,18 +18,19 @@ In the next section, I'll explain how to install and use it.
 
 ### Installation
 
-1. Create a new Rust project or open an existing one
-2. Add [**ariprog**](https://crates.io/crates/ariprog) as a dependency
+First, create a new Rust project or open an existing one
 
 ```bash
-# (1)
 cargo new testing-ariprog
 cd testing-ariprog
 
 # or
 cd existing-project
+```
 
-# (2)
+Then, add [**ariprog**](https://crates.io/crates/ariprog) as a dependency
+
+```bash
 cargo add ariprog
 ```
 
