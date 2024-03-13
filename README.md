@@ -79,7 +79,7 @@ To test ariprog, with the project in your machine, run `cargo test`.
 
 You should create tests in [`tests/unit_test.rs`](tests/unit_test.rs), however if you think that your tests should be in other module, do it and explain why in the PR.
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License - See the [LICENSE](https://github.com/kauefraga/ariprog/blob/main/LICENSE) for more information.
 
