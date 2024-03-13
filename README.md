@@ -1,20 +1,18 @@
 # Ariprog
 
 ![GitHub top language](https://img.shields.io/github/languages/top/kauefraga/ariprog)
-![ariprog](https://img.shields.io/badge/ariprog-b7410e)
+![Crates.io Version](https://img.shields.io/crates/v/ariprog)
 ![GitHub's license](https://img.shields.io/github/license/kauefraga/ariprog)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/kauefraga/ariprog/main)
 
-## Features
+## 🔥 Features
 
 Here's a list of what **ariprog** is capable of.
 
-- [x] Solve AP problems with `get_common_difference`, `get_first_term`, `get_nth_term` and `insert_arithmetic_means`.
+- [x] Solve AP problems with `get_common_difference`, `get_first_term`, `get_nth_term` and `insert_arithmetic_means` functions.
 - [ ] Store an AP (`new`) and solve problems with methods.
 
-In the next section, I'll explain how to install and use it.
-
-## Usage
+## 🛠 Usage
 
 ### Installation
 
@@ -34,9 +32,11 @@ Then, add [**ariprog**](https://crates.io/crates/ariprog) as a dependency
 cargo add ariprog
 ```
 
-See below the latest ariprog version.
+As an alternative, you can add the following line in your `Cargo.toml` (dependencies section)
 
-![Crates.io Version](https://img.shields.io/crates/v/ariprog)
+```bash
+ariprog = "0.1.1"
+```
 
 ### Getting started
 
@@ -62,7 +62,7 @@ fn main() {
 
 Coming soon...
 
-## Contributing
+## 💖 Contributing
 
 Feel free to fork it, make a change and open a pull request. Same for issues, suggest an API change, an improvement, a feature or report a bug.
 
@@ -73,7 +73,7 @@ Feel free to fork it, make a change and open a pull request. Same for issues, su
 3. Make your changes, commit and push these
 4. Open a pull request (write a descriptive message about what you changed)
 
-## How to run and where to create tests
+## 🧪 Testing
 
 To test ariprog, with the project in your machine, run `cargo test`.
 
