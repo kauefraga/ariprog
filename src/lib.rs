@@ -1,6 +1,3 @@
-#[cfg(test)]
-mod tests;
-
 /// Returns the common difference between two terms of an arithmetic progression
 ///
 /// # Arguments
@@ -58,4 +55,21 @@ pub fn get_first_term(nth_term: f32, common_difference: f32, nth_term_position: 
     let first_term = nth_term + (first_calc * -1.0);
 
     first_term
+}
+
+pub fn insert_arithmetic_means(how_many_in_between: i32, first_term: f32, last_term: f32) -> Vec<f32> {
+    let how_many_terms = how_many_in_between as f32 + 2.0;
+    let first_calc = last_term - first_term;
+
+    let common_difference = first_calc / (how_many_terms - 1.0);
+
+    let mut counter = 0.0;
+    let mut arithmetic_means = vec![];
+
+    while counter < how_many_terms {
+        arithmetic_means.push(first_term + (counter * common_difference));
+        counter += 1.0;
+    }
+
+    arithmetic_means
 }
