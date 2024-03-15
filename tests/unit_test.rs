@@ -24,7 +24,7 @@ fn it_gets_first_term() {
 }
 
 #[test]
-fn it_insert_arithmetic_means() {
+fn it_inserts_arithmetic_means() {
   assert_eq!(
     insert_arithmetic_means(6, 14.0, 98.0),
     vec![14.0, 26.0, 38.0, 50.0, 62.0, 74.0, 86.0, 98.0]
