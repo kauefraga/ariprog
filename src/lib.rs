@@ -51,8 +51,8 @@ pub fn get_nth_term(first_term: f32, common_difference: f32, nth_term_position: 
 /// let first_term = ariprog::get_first_term(-103.0, -2.0, 50.0); // Should return -5
 /// ```
 pub fn get_first_term(nth_term: f32, common_difference: f32, nth_term_position: f32) -> f32 {
-    let first_calc = (nth_term_position - 1.0) * common_difference;
-    let first_term = nth_term + (first_calc * -1.0);
+    // an = a + (n - 1)d --> a = an + [(n - 1) * d * -1]
+    let first_term = nth_term + ((nth_term_position - 1.0) * common_difference * -1.0);
 
     first_term
 }
