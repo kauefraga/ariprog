@@ -5,12 +5,16 @@
 ![GitHub's license](https://img.shields.io/github/license/kauefraga/ariprog)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/kauefraga/ariprog/main)
 
-## 🔥 Features
+I decided to create this library to study math. I had a test (03/2024) on arithmetic progressions, so I wanted to take advantage of the fact that I'm studying Rust and APs to develop some utility code.
 
-Here's a list of what **ariprog** is capable of.
+The objetive of **ariprog** is to solve the main problems around APs. Here's a list of what it's capable of.
 
-- [x] Solve AP problems with `get_common_difference`, `get_first_term`, `get_nth_term` and `insert_arithmetic_means` functions.
-- [ ] Store an AP (`new`) and solve problems with methods.
+- [x] Common difference (d)
+- [x] Nth term (an)
+- [x] First term (a)
+- [x] Interpolate/insert arithmetic means
+- [ ] How many terms in the AP (n)
+- [ ] Common difference and first term
 
 ## 🛠 Usage
 
