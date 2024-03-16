@@ -41,7 +41,7 @@ cargo add ariprog
 As an alternative, you can add the following line in your `Cargo.toml` (dependencies section)
 
 ```bash
-ariprog = "0.1.3"
+ariprog = "0.1.4"
 ```
 
 ### Getting started
