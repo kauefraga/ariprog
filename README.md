@@ -16,6 +16,8 @@ The objetive of **ariprog** is to solve the main problems around APs. Here's a l
 - [x] Interpolate/insert arithmetic means
 - [x] Get common difference and first term (d, a)
 
+In the [API](#api) section, you'll see the corresponding functions and how to use them.
+
 ## 🛠 Usage
 
 ### Installation
@@ -39,16 +41,19 @@ cargo add ariprog
 As an alternative, you can add the following line in your `Cargo.toml` (dependencies section)
 
 ```bash
-ariprog = "0.1.1"
+ariprog = "0.1.3"
 ```
 
 ### Getting started
 
 ```rust
-use ariprog::{get_common_difference, get_nth_term};
+use ariprog::{
+    common_difference,
+    nth_term
+};
 
 fn main() {
-    let common_diff = get_common_difference(6.0, 2.0); // expected 4.0
+    let common_diff = common_difference(6.0, 2.0); // expected 4.0
 
     println!(
         "The common difference in the AP [2.0, 6.0, 10.0, 14.0] is {}",
@@ -57,14 +62,27 @@ fn main() {
 
     println!(
         "The seventeenth term of the AP [2.0, 6.0, 10.0, 14.0, ...] is {}",
-        get_nth_term(2.0, common_diff, 17.0)
+        nth_term(2.0, common_diff, 17.0)
     ); // expected 66.0
 }
 ```
 
 ### API
 
-Coming soon...
+First things first, after adding **ariprog** in your project, import it.
+
+```rust
+use ariprog;
+```
+
+- Get common difference (d): `ariprog::common_difference`
+- Get nth term (an): `ariprog::nth_term`
+- Get first term (a): `ariprog::first_term`
+- Insert/interpolate arithmetic means: `ariprog::insert_arithmetic_means`
+- Get how many terms in the AP (n): `ariprog::how_many_terms`
+- Get common difference and first term (d, a): `ariprog::common_difference_and_first_term`
+
+All of these functions have their own documentation. See in [docs.rs](https://docs.rs/ariprog) or in your IDE.
 
 ## 💖 Contributing
 
