@@ -9,10 +9,10 @@
 ///
 /// ```
 /// use ariprog;
-/// let common_diff = ariprog::get_common_difference(10.0, 5.0); // Should return 5
-/// let cd = ariprog::get_common_difference(12.0, 2.0); // should return 10
+/// let common_diff = ariprog::common_difference(10.0, 5.0); // Should return 5
+/// let cd = ariprog::common_difference(12.0, 2.0); // should return 10
 /// ```
-pub fn get_common_difference(term: f32, previous_term: f32) -> f32 {
+pub fn common_difference(term: f32, previous_term: f32) -> f32 {
     term - previous_term
 }
 
@@ -28,9 +28,9 @@ pub fn get_common_difference(term: f32, previous_term: f32) -> f32 {
 ///
 /// ```
 /// use ariprog;
-/// let nth_term = ariprog::get_nth_term(1.0, 2.0, 20.0); // Should return 39
+/// let nth_term = ariprog::nth_term(1.0, 2.0, 20.0); // Should return 39
 /// ```
-pub fn get_nth_term(first_term: f32, common_difference: f32, nth_term_position: f32) -> f32 {
+pub fn nth_term(first_term: f32, common_difference: f32, nth_term_position: f32) -> f32 {
     let nth_term = first_term + (nth_term_position - 1.0) * common_difference;
 
     nth_term
@@ -48,9 +48,9 @@ pub fn get_nth_term(first_term: f32, common_difference: f32, nth_term_position: 
 ///
 /// ```
 /// use ariprog;
-/// let first_term = ariprog::get_first_term(-103.0, -2.0, 50.0); // Should return -5
+/// let first_term = ariprog::first_term(-103.0, -2.0, 50.0); // Should return -5
 /// ```
-pub fn get_first_term(nth_term: f32, common_difference: f32, nth_term_position: f32) -> f32 {
+pub fn first_term(nth_term: f32, common_difference: f32, nth_term_position: f32) -> f32 {
     // an = a + (n - 1)d --> a = an + [(n - 1) * d * -1]
     let first_term = nth_term + ((nth_term_position - 1.0) * common_difference * -1.0);
 
@@ -100,9 +100,9 @@ pub fn insert_arithmetic_means(how_many_in_between: i32, first_term: f32, nth_te
 ///
 /// ```
 /// use ariprog;
-/// let n_of_terms = ariprog::get_how_many_terms(0.0, 100.0, 2.0); // Should return 51
+/// let n_of_terms = ariprog::how_many_terms(0.0, 100.0, 2.0); // Should return 51
 /// ```
-pub fn get_how_many_terms(first_term: f32, nth_term: f32, common_difference: f32) -> i32 {
+pub fn how_many_terms(first_term: f32, nth_term: f32, common_difference: f32) -> i32 {
     let how_many_terms = (nth_term - first_term + common_difference) / common_difference;
 
     how_many_terms as i32
@@ -124,18 +124,18 @@ pub struct NthTerm {
 ///
 /// ```
 /// use ariprog;
-/// let common_diff_and_first_term = ariprog::get_common_difference_and_first_term(
+/// let common_diff_and_first_term = ariprog::common_difference_and_first_term(
 ///     ariprog::NthTerm { value: 64.0, position: 8.0 },
 ///     ariprog::NthTerm { value: 32.0, position: 4.0 }
 /// ); // Should return (8.0, 8.0)
 /// ```
-pub fn get_common_difference_and_first_term(nth_term: NthTerm, term: NthTerm) -> (f32, f32) {
+pub fn common_difference_and_first_term(nth_term: NthTerm, term: NthTerm) -> (f32, f32) {
     // system of equation - addition method
     let common_difference =
         (nth_term.value + (term.value * -1.0)) /
         ((nth_term.position - 1.0) + ((term.position - 1.0) * -1.0));
 
-    let first_term = get_first_term(nth_term.value, common_difference, nth_term.position);
+    let first_term = first_term(nth_term.value, common_difference, nth_term.position);
 
     (common_difference, first_term)
 }
