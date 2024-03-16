@@ -5,7 +5,7 @@
 ![GitHub's license](https://img.shields.io/github/license/kauefraga/ariprog)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/kauefraga/ariprog/main)
 
-I decided to create this library to study math. I had a test (03/2024) on arithmetic progressions, so I wanted to take advantage of the fact that I'm studying Rust and APs to develop some utility code.
+I had a test (03/2024) on arithmetic progressions, so I decided to create a library to study math. Taking advantage of the fact that I was studying Rust and APs, I created this library.
 
 The objetive of **ariprog** is to solve the main problems around APs. Here's a list of what it's capable of.
 
