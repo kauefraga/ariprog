@@ -9,12 +9,12 @@ I had a test (03/2024) on arithmetic progressions, so I decided to create a libr
 
 The objetive of **ariprog** is to solve the main problems around APs. Here's a list of what it's capable of.
 
-- [x] Common difference (d)
-- [x] Nth term (an)
-- [x] First term (a)
+- [x] Get common difference (d)
+- [x] Get nth term (an)
+- [x] Get first term (a)
+- [x] Get how many terms in the AP (n)
 - [x] Interpolate/insert arithmetic means
-- [x] How many terms in the AP (n)
-- [ ] Common difference and first term
+- [ ] Get common difference and first term (d, a)
 
 ## 🛠 Usage
 
