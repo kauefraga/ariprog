@@ -1,8 +1,5 @@
 use ariprog::{
-  get_common_difference,
-  get_nth_term,
-  get_first_term,
-  insert_arithmetic_means
+  get_common_difference, get_first_term, get_how_many_terms, get_nth_term, insert_arithmetic_means
 };
 
 #[test]
@@ -32,5 +29,17 @@ fn it_inserts_arithmetic_means() {
   assert_eq!(
     insert_arithmetic_means(3, 1.0, 13.0),
     vec![1.0, 4.0, 7.0, 10.0, 13.0]
-  )
+  );
+}
+
+#[test]
+fn it_gets_the_number_of_terms() {
+    assert_eq!(
+        get_how_many_terms(5.0, 785.0, 5.0),
+        157
+    );
+    assert_eq!(
+        get_how_many_terms(0.0, 1000.0, 2.0),
+        501
+    );
 }

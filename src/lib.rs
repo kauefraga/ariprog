@@ -87,3 +87,23 @@ pub fn insert_arithmetic_means(how_many_in_between: i32, first_term: f32, nth_te
 
     arithmetic_means
 }
+
+/// Returns the number of terms in an AP
+///
+/// # Arguments
+///
+/// * `first_term` - The first term of the AP
+/// * `nth_term` - The nth term of the AP
+/// * `common_difference` - The common difference of the AP
+///
+/// # Examples
+///
+/// ```
+/// use ariprog;
+/// let n_of_terms = ariprog::get_how_many_terms(0.0, 100.0, 2.0); // Should return 51
+/// ```
+pub fn get_how_many_terms(first_term: f32, nth_term: f32, common_difference: f32) -> i32 {
+    let how_many_terms = (nth_term - first_term + common_difference) / common_difference;
+
+    how_many_terms as i32
+}
