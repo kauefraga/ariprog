@@ -13,7 +13,7 @@ The objetive of **ariprog** is to solve the main problems around APs. Here's a l
 - [x] Nth term (an)
 - [x] First term (a)
 - [x] Interpolate/insert arithmetic means
-- [ ] How many terms in the AP (n)
+- [x] How many terms in the AP (n)
 - [ ] Common difference and first term
 
 ## 🛠 Usage
