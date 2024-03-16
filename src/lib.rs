@@ -107,3 +107,35 @@ pub fn get_how_many_terms(first_term: f32, nth_term: f32, common_difference: f32
 
     how_many_terms as i32
 }
+
+pub struct NthTerm {
+    pub value: f32,
+    pub position: f32
+}
+
+/// Returns the common difference and the first term, as a tuple (common_difference, first_term)
+///
+/// # Arguments
+///
+/// * `nth_term` - The nth term of the AP
+/// * `term` - A term before the nth term
+///
+/// # Examples
+///
+/// ```
+/// use ariprog;
+/// let common_diff_and_first_term = ariprog::get_common_difference_and_first_term(
+///     ariprog::NthTerm { value: 64.0, position: 8.0 },
+///     ariprog::NthTerm { value: 32.0, position: 4.0 }
+/// ); // Should return (8.0, 8.0)
+/// ```
+pub fn get_common_difference_and_first_term(nth_term: NthTerm, term: NthTerm) -> (f32, f32) {
+    // system of equation - addition method
+    let common_difference =
+        (nth_term.value + (term.value * -1.0)) /
+        ((nth_term.position - 1.0) + ((term.position - 1.0) * -1.0));
+
+    let first_term = get_first_term(nth_term.value, common_difference, nth_term.position);
+
+    (common_difference, first_term)
+}

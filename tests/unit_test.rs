@@ -1,5 +1,11 @@
 use ariprog::{
-  get_common_difference, get_first_term, get_how_many_terms, get_nth_term, insert_arithmetic_means
+  get_common_difference,
+  get_common_difference_and_first_term,
+  get_first_term,
+  get_how_many_terms,
+  get_nth_term,
+  insert_arithmetic_means,
+  NthTerm
 };
 
 #[test]
@@ -42,4 +48,22 @@ fn it_gets_the_number_of_terms() {
         get_how_many_terms(0.0, 1000.0, 2.0),
         501
     );
+}
+
+#[test]
+fn it_gets_common_difference_and_first_term() {
+    assert_eq!(
+        get_common_difference_and_first_term(
+            NthTerm { value: 64.0, position: 8.0 },
+            NthTerm { value: 32.0, position: 4.0 }
+        ),
+        (8.0, 8.0)
+    );
+    assert_eq!(
+        get_common_difference_and_first_term(
+            NthTerm { value: 1000.0, position: 501.0 },
+            NthTerm { value: 998.0, position: 500.0 }
+        ),
+        (2.0, 0.0)
+    )
 }
