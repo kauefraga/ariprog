@@ -1,6 +1,6 @@
 [package]
 name = "ariprog"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 authors = ["Kauê Fraga Rodrigues"]
 description = "Need a powerful and simple library to work with arithmetic progressions in Rust? You should definitively try out ariprog!"

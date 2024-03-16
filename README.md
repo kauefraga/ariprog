@@ -14,7 +14,7 @@ The objetive of **ariprog** is to solve the main problems around APs. Here's a l
 - [x] Get first term (a)
 - [x] Get how many terms in the AP (n)
 - [x] Interpolate/insert arithmetic means
-- [ ] Get common difference and first term (d, a)
+- [x] Get common difference and first term (d, a)
 
 ## 🛠 Usage
 
